@@ -30,10 +30,10 @@
                     </li>
                 </div>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#"> Tentang Kami </a>
+                    <a class="nav-link" href="#about"> Tentang Kami </a>
                 </li>
                 <li class="nav-item mx-3">
-                    <a class="nav-link button" href="#"> Login </a>
+                    <a class="nav-link button" href="login.php"> Login </a>
                 </li>
             </ul>
         </div>

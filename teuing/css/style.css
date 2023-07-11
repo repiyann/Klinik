@@ -3,7 +3,7 @@
     --black: #444;
     --light-color: #777;
     --box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
-    --nav-shadow: 0px 10px 15px -5px rgba(0,0,0,0.1);
+    --nav-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.1);
     --border: 0.2rem solid var(--green);
 }
 
@@ -52,7 +52,7 @@ a.button:hover {
 
 .button span:after {
     content: "\f061";
-    font-family: 'Font Awesome 6 Free';
+    font-family: "Font Awesome 6 Free";
     font-style: normal;
     font-weight: 900;
     text-decoration: inherit;
@@ -102,4 +102,9 @@ a#dropdownhead {
 
 a {
     color: inherit;
+}
+
+#login {
+    color: #fff; 
+    background-color: var(--green);
 }

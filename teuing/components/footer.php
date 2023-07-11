@@ -41,3 +41,9 @@
         </div>
     </div>
 </footer>
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold text-decoration-none" href="https://github.com/repiyann"> @repiyann </a>
+</div>
+<!-- Copyright -->
