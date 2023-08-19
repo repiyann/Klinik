@@ -1,8 +1,3 @@
-document.getElementById("muterfoot").addEventListener("click", function () {
-    var icon1 = this.querySelector("a.foot i.fa-chevron-down");
-    icon1.classList.toggle("rotate");
-});
-
 var key = document.querySelector("a.muter");
 document.addEventListener("click", function (event) {
     var isClickInside = key.contains(event.target);
@@ -13,4 +8,13 @@ document.addEventListener("click", function (event) {
         var icon = this.querySelector("a.head i.fa-chevron-down");
         icon.classList.remove("rotate");
     }
+});
+
+$(function () {
+    $("#reservasi").datepicker({
+        format: "dd/mm/yy",
+        startDate: "0d",
+        daysOfWeekDisabled: [0, 6],
+        endDate: "+30d",
+    });
 });

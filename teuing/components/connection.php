@@ -1,7 +1,7 @@
 <?php
-    $conn = new mysqli('localhost', 'root', '', 'klinik');
+    $conn = mysqli_connect('localhost', 'root', '', 'klinik');
     
-    if ($conn->connect_errno) {
-        echo'Erorr : ', $conn->connect_error;
+    if (mysqli_connect_errno()) {
+        echo'Erorr : ' . mysqli_connect_error();
     }
 ?>
