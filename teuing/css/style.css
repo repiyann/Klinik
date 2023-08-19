@@ -7,6 +7,10 @@
     --border: 0.2rem solid var(--green);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -36,11 +40,11 @@ a.button {
     margin-top: 0.3rem;
     padding: 0.2rem;
     border-radius: 0.5rem;
-}
 
-a.button:hover {
-    background-color: #0c5a4a;
-    color: #fff;
+    &:hover {
+        background-color: #0c5a4a;
+        color: #fff;
+    }
 }
 
 .button span {
@@ -48,63 +52,58 @@ a.button:hover {
     display: inline-block;
     position: relative;
     transition: 0.5s;
-}
 
-.button span:after {
-    content: "\f061";
-    font-family: "Font Awesome 6 Free";
-    font-style: normal;
-    font-weight: 900;
-    text-decoration: inherit;
-    position: absolute;
-    opacity: 0;
-    right: 20px;
-    transition: 0.5s;
+    &:after {
+        content: "\f061";
+        font-family: "Font Awesome 6 Free";
+        font-style: normal;
+        font-weight: 900;
+        text-decoration: inherit;
+        position: absolute;
+        opacity: 0;
+        right: 20px;
+        transition: 0.5s;
+    }
 }
 
 .button:hover span {
     padding-right: 20px;
+
+    &:after {
+        opacity: 1;
+        right: 0;
+    }
 }
 
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-#dropdown .fa-chevron-down {
-    transition: all 1s ease;
+a {
+    cursor: pointer;
 }
 
 .rotate {
     transform: rotate(180deg);
 }
 
-#dropdown-menu-head {
-    overflow: hidden;
-    display: none;
-    background: #fff;
-}
-
-#dropdown-menu-foot {
-    overflow: hidden;
-    display: none;
-    background: #fff;
-}
-
-a#dropdownfoot {
-    color: inherit;
-    cursor: pointer;
-}
-
-a#dropdownhead {
-    cursor: pointer;
-}
-
-a {
-    color: inherit;
-}
-
 #login {
-    color: #fff; 
+    color: #fff;
     background-color: var(--green);
+}
+
+p.msg {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+}
+
+.datepicker td,
+th {
+    text-align: center;
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    min-height: 50px;
 }
